@@ -26,11 +26,10 @@ a {
 .master-grid {
   display: grid;
   background-color: #e5e5e5;
-  grid-template-columns: 1fr repeat(4, 15rem) 1fr;
+  grid-template-columns: 1fr repeat(4, 20%) 1fr;
   grid-template-rows: auto;
   row-gap: 2px;
   column-gap: 10px;
-  justify-content: center;
 }
 
 header {
@@ -100,7 +99,7 @@ section::after {
 
 .about-me-content {
   margin: 10px;
-  padding: 0px 20px;
+  padding: 0px 10px;
   line-height: 1.5rem;
   flex-grow: 1;
 }
@@ -108,7 +107,7 @@ section::after {
 .quote-section {
   height: 10rem;
   font-family: "Give You Glory", cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #0339a6;
   letter-spacing: 0.2rem;
   background-color: white;
@@ -125,6 +124,7 @@ section::after {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr repeat(2, 3fr);
+  justify-content: center;
 }
 
 .education-header {
@@ -199,6 +199,7 @@ figcaption {
 #skills-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #contact-container {
@@ -358,13 +359,15 @@ footer .location {
 
 @media screen and (max-width: 1300px) {
   /* Laptop styles go here */
-  .master-grid{
-  column-gap: 5px;
-  }
 
   .education {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr repeat(3, 3fr);
+   justify-content: space-around;
+}
+
+img.profile-photo {
+  height: 18rem;
 }
 
 .education-items {
@@ -407,18 +410,98 @@ footer .location {
 
 @media screen and (max-width: 960px) {
   /* Tablet styles go here */
-
+ body{
+   font-size: 14px;
+ }
   footer {
     flex-direction: column;
     text-align: center;
   }
 
+  img.profile-photo {
+  height: 17rem;
+}
+
 }
 
 @media screen and (max-width: 800px) {
   /* Tablet styles go here */
+ body{
+   font-size: 12px;
+ }
 
+ img.profile-photo {
+  height: 16rem;
+}
 
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+}
+
+   .education {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(4, 2.75fr);
+}
+
+.education-items {
+  margin: 0rem;
+  height: 15rem;
+  width: 15rem;
+  padding: 1rem 1rem;
+}
+
+.education-header {
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+}
+
+#edu-fau {
+  grid-row: 2 / span 1;
+}
+#edu-mit {
+  grid-row: 2 / span 1;
+}
+#edu-hpi {
+  grid-row: 3 / span 1;
+}
+#edu-su {
+  grid-row: 3 / span 1;
+}
+#edu-ga {
+  grid-row: 4 / span 1;
+}
+#edu-ca {
+  grid-row: 4 / span 1;
+}
+#edu-dh {
+  grid-row: 5 / span 1;
+}
+#edu-more {
+  grid-row: 5 / span 1;
+}
+
+.project-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr 3fr 3fr;
+}
+
+.project-container {
+  margin: 1rem 1rem;
+}
+
+.project-header {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1
+}
+
+#project-03{
+  grid-row: 2 / span 1;
+}
+#project-04{
+  grid-row: 3 / span 1;
+}
 
 }
 
@@ -435,5 +518,47 @@ footer .location {
     margin-top: 20px;
     padding-left: 0;
   }
+
+     .education {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr repeat(8, 3fr);
+}
+
+.education-items {
+  margin: 0rem;
+  height: 15rem;
+  width: 15rem;
+  padding: 1rem 1rem;
+}
+
+.education-header {
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+}
+
+#edu-fau {
+  grid-row: 2 / span 1;
+}
+#edu-mit {
+  grid-row: 3 / span 1;
+}
+#edu-hpi {
+  grid-row: 4 / span 1;
+}
+#edu-su {
+  grid-row: 5 / span 1;
+}
+#edu-ga {
+  grid-row: 6 / span 1;
+}
+#edu-ca {
+  grid-row: 7 / span 1;
+}
+#edu-dh {
+  grid-row: 8 / span 1;
+}
+#edu-more {
+  grid-row: 9 / span 1;
+}
 
 }
