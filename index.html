@@ -53,9 +53,9 @@
     ></script>
   </head>
 
-  <body>
+  <body class="master-grid">
     <header>
-      <h1>Philipp Wagner</h1>
+      <div class="brand-name">[PW]</div>
       <nav>
         <ul>
           <li><a href="#about-me">About me</a></li>
@@ -64,57 +64,61 @@
         </ul>
       </nav>
     </header>
-    <img src="./resources/images/banner.jpg" alt="" />
     <section class="hero-section">
       <p class="hero-title">Digital. Better Together.</p>
       <p class="hero-subtitle">
-        I collaborate with people to move companies forward.
+        I collaborate with people and companies to move technology forward.
       </p>
     </section>
-    <div class="key-word-section">
+
+    <div class="about-me">
+      <h1 id="about-me">Philipp Wagner</h1>
       <p>
-        #Digital Strategist, #Design Thinker, #Technology Lover, #Dot Connector,
-        #Map Maker, #Problem Solver.
+        #Digital Strategist, #Design Thinker, #Technology Lover, #Dot Connector
       </p>
     </div>
-    <main id="about-me" class="about-me-section">
-      <h2>About me.</h2>
-      <p>
-        I am passionate about absorbing business and technology trends,
-        filtering out what matters and helping to apply technologies, and new
-        ways of thinking to transform industries.
-      </p>
-      <p>
-        I have more than 14 years of experience as a strategy consultant &
-        corporate innovator working on digital strategy, digital business model
-        & AI strategy initiatives across various industries (e.g., automotive,
-        manufacturing, construction, insurances, wealth management &
-        healthcare). As part of my current role, I drive the next wave of sleep
-        tech products and services that harness exponential technology to push
-        the boundaries of what is possible for superior sleep. I join forces
-        with a global team to surpass incumbents and create new business models.
-      </p>
-      <p>
-        At the same time, I continuously extend my academic experience through
-        strategy, innovation, exponential tech, and design thinking courses at
-        leading universities.
-      </p>
-      <p>
-        Before my current role, I was responsible for driving the digital
-        transformation of the leading German asset manager and developing AI
-        capabilities for premium carmakers.
-      </p>
+    <h2  class="about-me-header">About me.</h2>
+    <main class="about-me-section">
       <img
         class="profile-photo"
         src="./resources/images/head-shot.jpg"
         alt=""
       />
+      <div class="about-me-content">
+        <p>
+          I am passionate about absorbing business and technology trends,
+          filtering out what matters and helping to apply technologies, and new
+          ways of thinking to transform industries.
+        </p>
+        <p>
+          I have more than 14 years of experience as a strategy consultant &
+          corporate innovator working on digital strategy, digital business
+          model & AI strategy initiatives across various industries (e.g.,
+          automotive, manufacturing, construction, insurances, wealth management
+          & healthcare). As part of my current role, I drive the next wave of
+          sleep tech products and services that harness exponential technology
+          to push the boundaries of what is possible for superior sleep. I join
+          forces with a global team to surpass incumbents and create new
+          business models.
+        </p>
+        <p>
+          At the same time, I continuously extend my academic experience through
+          strategy, innovation, exponential tech, and design thinking courses at
+          leading universities.
+        </p>
+        <p>
+          Before my current role, I was responsible for driving the digital
+          transformation of the leading German asset manager and developing AI
+          capabilities for premium carmakers.
+        </p>
+      </div>
     </main>
-    <div class="quote-section">
-      <p>Evolve or Die.</p>
+    <div class="quote-section-01">
+      <div>Evolve or Die.</div>
     </div>
+    
     <section class="education">
-      <h3>Education</h3>
+      <h2 class="education-header">Education</h2>
       <figure id="edu-fau">
         <img
           class="edu-organization-logo"
@@ -180,11 +184,12 @@
         <figcaption>Dark Horse, Berlin, DE</figcaption>
         <p>New Leadership, Leadership Program</p>
       </figure>
+      <figure id="edu-more">
+        <p>...and more to come!</p>
+      </figure>
     </section>
-    <section class="business-skills"></section>
-    <section class="design-skills"></section>
     <section class="coding-skills">
-      <h3>Coding Skills</h3>
+      <h2>Coding Skills</h2>
       <div id="skills-container">
         <i class="fab fa-html5 fa-3x"></i>
         <i class="fab fa-css3-alt fa-3x"></i>
@@ -209,7 +214,7 @@
       </p>
     </div>
     <section id="projects" class="project-section">
-      <h2>Projects.</h2>
+      <h2>Coding projects.</h2>
       <div id="project-01" class="project-container">
         <h3>Digital Investing</h3>
         <div class="project-details">
@@ -220,15 +225,17 @@
           />
           <h4>Description</h4>
           <p>
-            Development of a digital strategy and leading exponential change.
+            Development of a digital investment app (robo-advisor &
+            recommendation engine) for B2C and B2B clients.
           </p>
           <h4>Client</h4>
           <p>Leading German Fund Manager</p>
           <h4>Industry</h4>
           <p>Financial Services</p>
-          <h4>Service</h4>
+          <h4>Services</h4>
           <p>
-            Digital strategy, app development, data science & design thinking
+            Digital strategy, native app development, predictive modelling &
+            design thinking
           </p>
           <a href="" target="_blank">Demo</a>
         </div>
@@ -243,17 +250,17 @@
           />
           <h4>Description</h4>
           <p>
-            Development of a new AI-enabled bed system to push the boundaries of
+            Development of an AI-controlled bed system to push the boundaries of
             sleep.
           </p>
           <h4>Client</h4>
           <p>E-commerce startup</p>
           <h4>Industry</h4>
           <p>Consumer goods</p>
-          <h4>Service</h4>
+          <h4>Technologies</h4>
           <p>
-            Portfolio strategy, product development, app development & team
-            development
+            Hardware development, embedded software development, native app
+            development.
           </p>
           <a href="" target="_blank">Demo</a>
         </div>
@@ -276,7 +283,7 @@
           <h4>Industry</h4>
           <p>Health</p>
           <h4>Service</h4>
-          <p>Branding, visual design, full-stack development</p>
+          <p>Branding, visual design, full-stack website development.</p>
           <a
             href="https://pwagnerde.github.io/website-design-system/index.html"
             target="_blank"
