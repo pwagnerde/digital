@@ -3,7 +3,7 @@
 html {
   box-sizing: border-box;
   font-family: "Exo", sans-serif;
-  color: #040D40;
+  color: #040d40;
   font-size: 16px;
 }
 *,
@@ -12,25 +12,25 @@ html {
   box-sizing: inherit;
 }
 
-p{
-  color: #040D40;
+p {
+  color: #040d40;
 }
 
 a {
   text-decoration: none;
-  color: #0339A6;
+  color: #0339a6;
   font-weight: bold;
 }
 
 /* Desktop styles go here */
-.master-grid{
+.master-grid {
   display: grid;
-  background-color: #E5E5E5;
-  grid-template-columns: 10% repeat(4,1fr) 10%;
+  background-color: #e5e5e5;
+  grid-template-columns: 1fr repeat(4, 15rem) 1fr;
   grid-template-rows: auto;
   row-gap: 2px;
   column-gap: 10px;
-
+  justify-content: center;
 }
 
 header {
@@ -43,10 +43,10 @@ header {
   grid-column-start: span 6;
 }
 
-.brand-name{
-  font-family: 'Give You Glory', cursive;
+.brand-name {
+  font-family: "Give You Glory", cursive;
   font-size: 2rem;
-  color: #0339A6;
+  color: #0339a6;
   letter-spacing: 0.2rem;
   font-weight: bold;
   line-height: 0.25rem;
@@ -60,7 +60,7 @@ header ul {
 }
 
 header li {
-  list-style-type:none;
+  list-style-type: none;
   padding: 0 1rem;
 }
 
@@ -71,131 +71,369 @@ main {
 section::before,
 section::after {
   display: table;
-  content: ' ';
+  content: " ";
   clear: both;
 }
 
-.hero-section{
+.hero-section {
   height: 33rem;
-  background-image: url('../images/banner.jpg');
+  background-image: url("../images/banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-column-start: span 6;
 }
 
-.about-me{
+.about-me {
   text-align: center;
-  grid-column: 2 / span 4;  
+  grid-column: 2 / span 4;
 }
-.about-me-header{
-  grid-column: 2 / span 4;  
+.about-me-header {
+  grid-column: 2 / span 4;
 }
 
-.about-me-section{
+.about-me-section {
   grid-column: 2 / span 4;
   display: flex;
   align-items: center;
 }
 
-.about-me-content{
+.about-me-content {
   margin: 10px;
   padding: 0px 20px;
   line-height: 1.5rem;
   flex-grow: 1;
 }
 
-
-.quote-section-01{
-  height: 5rem;
-  font-family: 'Give You Glory', cursive;
+.quote-section {
+  height: 10rem;
+  font-family: "Give You Glory", cursive;
   font-size: 2rem;
-  color: #0339A6;
+  color: #0339a6;
   letter-spacing: 0.2rem;
-  font-weight: bold;
-  background-color:white;
+  background-color: white;
   text-align: center;
-  padding: 15px 0px;
+  padding: 15px 10%;
   grid-column: 1 / span 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.education-header{
-   grid-column: 2 / span 4; 
-}
-.education{
-   grid-column: 2 / span 4;
-   display: grid;
-   grid-template-columns: repeat(4,1fr);
-   grid-template-rows: repeat(2,1fr);
+.education {
+  grid-column: 2 / span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr repeat(2, 3fr);
 }
 
-.hero-title{
+.education-header {
+  grid-column: 1 / span 4;
+  grid-row: 1 / 2;
+}
+
+.education-items {
+  background-color: white;
+  margin: 0.5rem;
+  text-align: center;
+  border-radius: 50%;
+  height: 17rem;
+  width: 17rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+figcaption {
+  font-size: 0.5rem;
+  font-weight: bold;
+  padding: 1rem 0 0 0;
+}
+
+#edu-fau {
+  grid-row: 2 / span 1;
+  justify-self: center;
+}
+#edu-mit {
+  grid-row: 2 / span 1;
+  justify-self: center;
+}
+#edu-hpi {
+  grid-row: 2 / span 1;
+  justify-self: center;
+}
+#edu-su {
+  grid-row: 2 / span 1;
+  justify-self: center;
+}
+#edu-ga {
+  grid-row: 3 / span 1;
+  justify-self: center;
+}
+#edu-ca {
+  grid-row: 3 / span 1;
+  justify-self: center;
+}
+#edu-dh {
+  grid-row: 3 / span 1;
+  justify-self: center;
+}
+#edu-more {
+  grid-row: 3 / span 1;
+  justify-self: center;
+}
+
+.coding-skills {
+  grid-column: 2 / span 4;
+  margin: 2rem 0 1rem 0;
+}
+
+.coding-counter {
+  grid-column: 2 / span 4;
+  justify-self: center;
+  margin-bottom: 3rem;
+}
+
+#skills-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
   margin-top: 15rem;
   padding-left: 2%;
   line-height: 0.2rem;
-
 }
-.hero-subtitle{
+.hero-subtitle {
   font-size: 1rem;
   font-weight: bold;
   color: white;
   padding-left: 2%;
 }
 
-h1{
-  font-family: 'Give You Glory', cursive;
+h1 {
+  font-family: "Give You Glory", cursive;
   font-size: 3rem;
   letter-spacing: 0.25rem;
-  color: #0339A6;
+  color: #0339a6;
   line-height: 0.75;
 }
-h2{
-  font-family: 'Give You Glory', cursive;
+h2 {
+  font-family: "Give You Glory", cursive;
   font-size: 2.5rem;
   letter-spacing: 0.25rem;
-  color: #0339A6;
+  color: #0339a6;
   padding-left: 2%;
   line-height: 0.75;
 }
-h3{
+h3 {
   font-size: 1rem;
   letter-spacing: 0.25rem;
 }
 
-h4{
+h4 {
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-figure{
+figure {
   margin: 0;
 }
 
-img{
+img {
   width: 100%;
   height: 40rem;
 }
 
-img.profile-photo{
+img.profile-photo {
   width: auto;
   height: 20rem;
   border-radius: 50%;
 }
 
-img.edu-organization-logo{
+img.edu-organization-logo {
   width: auto;
   height: 3rem;
 }
 
-img.project-illustration{
+img.project-illustration {
   width: auto;
-  height: 15rem;
+  height: 20rem;
 }
 
-i{
-  color: #040D40;
+i {
+  color: #040d40;
+}
+
+.contact-section {
+  grid-column: 2 / span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contact-cta {
+  height: 60px;
+  width: 200px;
+  padding: 12px 20px;
+  text-align: center;
+  border: solid 1px #ffffff;
+  border-radius: 4px;
+  background-color: #ad9575;
+  color: white;
+  font-size: 1.25rem;
+}
+
+footer {
+  grid-column: 1 / span 6;
+  display: flex;
+  padding: 1.5rem 0rem;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .copyright {
+  flex-grow: 1;
+  padding: 0 2%;
+  margin: 5px 0px 5px 0px;
+  color: white;
+}
+
+footer .location {
+  padding: 0 2%;
+  margin: 5px 0px 5px 0px;
+  color: white;
+}
+
+.project-section {
+  grid-column: 2 / span 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 3fr;
+  margin-bottom: 3rem;
+}
+
+.project-header {
+  grid-column: 1 / span 2;
+}
+
+.project-container {
+  text-align: center;
+  background-color: white;
+  padding: 0 2rem;
+  margin: 0 1rem;
+}
+
+.project-details {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.project-description {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+#project-01,
+#project-02 {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  /* Laptop styles go here */
+  .master-grid{
+  column-gap: 5px;
+  }
+
+  .education {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr repeat(3, 3fr);
+}
+
+.education-items {
+  margin: 0rem;
+  height: 17rem;
+  width: 17rem;
+  padding: 1rem 1rem;
+}
+
+.education-header {
+  grid-column: 1 / span 3;
+  grid-row: 1 / 2;
+}
+
+#edu-fau {
+  grid-row: 2 / span 1;
+}
+#edu-mit {
+  grid-row: 2 / span 1;
+}
+#edu-hpi {
+  grid-row: 2 / span 1;
+}
+#edu-su {
+  grid-row: 3 / span 1;
+}
+#edu-ga {
+  grid-row: 3 / span 1;
+}
+#edu-ca {
+  grid-row: 3 / span 1;
+}
+#edu-dh {
+  grid-row: 4 / span 1;
+}
+#edu-more {
+  grid-row: 4 / span 1;
+}
+}
+
+@media screen and (max-width: 960px) {
+  /* Tablet styles go here */
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  /* Tablet styles go here */
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+  /* Mobile styles go here */
+    header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px;
+  }
+
+  .brand-name{
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
 }

@@ -55,12 +55,12 @@
 
   <body class="master-grid">
     <header>
-      <div class="brand-name">[PW]</div>
+      <div class="brand-name"><a href="index.html">[PW]</a></div>
       <nav>
         <ul>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#about-me">About me</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -77,7 +77,7 @@
         #Digital Strategist, #Design Thinker, #Technology Lover, #Dot Connector
       </p>
     </div>
-    <h2  class="about-me-header">About me.</h2>
+    <h2 class="about-me-header">About me.</h2>
     <main class="about-me-section">
       <img
         class="profile-photo"
@@ -113,13 +113,13 @@
         </p>
       </div>
     </main>
-    <div class="quote-section-01">
-      <div>Evolve or Die.</div>
+    <div class="quote-section">
+      <div>"Evolve or Die."</div>
     </div>
-    
+
     <section class="education">
-      <h2 class="education-header">Education</h2>
-      <figure id="edu-fau">
+      <h2 class="education-header">Education.</h2>
+      <figure id="edu-fau" class="education-items">
         <img
           class="edu-organization-logo"
           src="./resources/images/edu-fau.png"
@@ -130,7 +130,7 @@
         </figcaption>
         <p>Information Systems, Master Program</p>
       </figure>
-      <figure id="edu-mit">
+      <figure id="edu-mit" class="education-items">
         <img
           class="edu-organization-logo"
           src="./resources/images/edu-mit.png"
@@ -139,7 +139,7 @@
         <figcaption>MIT Sloan School of Management, Cambridge, US</figcaption>
         <p>Strategy & Innovation, Executive Program</p>
       </figure>
-      <figure id="edu-hpi">
+      <figure id="edu-hpi" class="education-items">
         <img
           class="edu-organization-logo"
           src="./resources/images/edu-hpi.png"
@@ -148,7 +148,7 @@
         <figcaption>Hasso-Plattner-Institut, Potsdam, DE</figcaption>
         <p>Design Thinking, Professional Track</p>
       </figure>
-      <figure id="edu-su">
+      <figure id="edu-su" class="education-items">
         <img
           class="edu-organization-logo"
           src="./resources/images/edu-su.png"
@@ -157,7 +157,7 @@
         <figcaption>Singularity University, Mountain View, US</figcaption>
         <p>Exponential Innovation, Executive Program</p>
       </figure>
-      <figure id="edu-ga">
+      <figure id="edu-ga" class="education-items">
         <img
           class="edu-organization-logo"
           src="./resources/images/edu-ga.png"
@@ -166,7 +166,7 @@
         <figcaption>General Assembly, London, UK</figcaption>
         <p>Visual Design & Product Management, Bootcamp</p>
       </figure>
-      <figure id="edu-ca">
+      <figure id="edu-ca" class="education-items">
         <img
           class="edu-organization-logo"
           src="./resources/images/edu-ca.png"
@@ -175,7 +175,7 @@
         <figcaption>Codecademy, New York City, US</figcaption>
         <p>Full-Stack Engineer, Career Path</p>
       </figure>
-      <figure id="edu-dh">
+      <figure id="edu-dh" class="education-items">
         <img
           class="edu-organization-logo"
           src="./resources/images/edu-dh.jpg"
@@ -184,12 +184,12 @@
         <figcaption>Dark Horse, Berlin, DE</figcaption>
         <p>New Leadership, Leadership Program</p>
       </figure>
-      <figure id="edu-more">
+      <figure id="edu-more" class="education-items">
         <p>...and more to come!</p>
       </figure>
     </section>
     <section class="coding-skills">
-      <h2>Coding Skills</h2>
+      <h2>Coding Skills.</h2>
       <div id="skills-container">
         <i class="fab fa-html5 fa-3x"></i>
         <i class="fab fa-css3-alt fa-3x"></i>
@@ -206,15 +206,19 @@
         <i class="fas fa-angle-double-right fa-3x"></i>
       </div>
     </section>
+    <p class="coding-counter">
+      In ❤️ with tech for
+      <span id="time-container">0</span> seconds.
+    </p>
     <section class="data-skills"></section>
     <section class="people-skills"></section>
     <div class="quote-section">
-      <p>
-        Dreams + Embracing Reality + Determination = Successful Work & Life.
-      </p>
+      <div>
+        "Dreams + Embracing Reality + Determination = Successful Work & Life."
+      </div>
     </div>
     <section id="projects" class="project-section">
-      <h2>Coding projects.</h2>
+      <h2 class="project-header">Coding projects.</h2>
       <div id="project-01" class="project-container">
         <h3>Digital Investing</h3>
         <div class="project-details">
@@ -223,21 +227,22 @@
             src="./resources/images/mpy-demo.jpg"
             alt=""
           />
-          <h4>Description</h4>
-          <p>
-            Development of a digital investment app (robo-advisor &
-            recommendation engine) for B2C and B2B clients.
-          </p>
-          <h4>Client</h4>
-          <p>Leading German Fund Manager</p>
-          <h4>Industry</h4>
-          <p>Financial Services</p>
-          <h4>Services</h4>
-          <p>
-            Digital strategy, native app development, predictive modelling &
-            design thinking
-          </p>
-          <a href="" target="_blank">Demo</a>
+          <div class="project-description">
+            <h4>Description</h4>
+            <p>
+              Development of a digital investment app (robo-advisor &
+              recommendation engine) for B2C and B2B clients.
+            </p>
+            <h4>Client</h4>
+            <p>Leading German Fund Manager</p>
+            <h4>Industry</h4>
+            <p>Financial Services</p>
+            <h4>Services</h4>
+            <p>
+              Digital strategy, native app development, predictive modelling &
+              design thinking
+            </p>
+          </div>
         </div>
       </div>
       <div id="project-02" class="project-container">
@@ -248,6 +253,7 @@
             src="./resources/images/mpy-demo.jpg"
             alt=""
           />
+          <div class="project-description">
           <h4>Description</h4>
           <p>
             Development of an AI-controlled bed system to push the boundaries of
@@ -262,7 +268,7 @@
             Hardware development, embedded software development, native app
             development.
           </p>
-          <a href="" target="_blank">Demo</a>
+          </div>
         </div>
       </div>
       <div id="project-03" class="project-container">
@@ -273,10 +279,11 @@
             src="./resources/images/mpy-demo.jpg"
             alt=""
           />
+          <div class="project-description">
           <h4>Description</h4>
           <p>
             Re-design of company branding, development of responsive website and
-            development of a digital training services.
+            development of digital training services.
           </p>
           <h4>Client</h4>
           <p>Yoga startup</p>
@@ -284,38 +291,37 @@
           <p>Health</p>
           <h4>Service</h4>
           <p>Branding, visual design, full-stack website development.</p>
-          <a
-            href="https://pwagnerde.github.io/website-design-system/index.html"
-            target="_blank"
-            >Demo</a
-          >
+        </div>
+        </div>
+      </div>
+            <div id="project-04" class="project-container">
+        <h3>Digital Car, Health, and Investing</h3>
+        <div class="project-details">
+          <img
+            class="project-illustration"
+            src=""
+            alt=""
+          />
+          <div class="project-description">
+                    <h4>Confidential</h4>
+          <p>
+            Please get in touch to learn more.
+          </p>
+        </div>
         </div>
       </div>
     </section>
     <div class="quote-section">
-      <p>
-        There is always a good path. If you don't see it, you just need to keep
-        looking in a good way, with the help of others.
-      </p>
+      <div>
+        "There is always a good path. If you don't see it, you just need to keep
+        looking in a good way, with the help of others."
+      </div>
     </div>
     <section id="contact" class="contact-section">
       <h2>Interested?</h2>
-      <p>I love to collaborate.</p>
-      <a href="">Get in touch</a>
-      <div id="skills-container">
-        <i class="fas fa-at fa-3x"></i>
-        <i class="fab fab fa-telegram-plane fa-3x"></i>
-        <i class="fab fa-linkedin fa-3x"></i>
-        <i class="fab fa-xing fa-3x"></i>
-        <i class="fab fa-twitter fa-3x"></i>
-        <i class="fab fa-github fa-3x"></i>
-      </div>
+      <a class="contact-cta" href="contact.html">Get in touch</a>
     </section>
     <footer>
-      <p>
-        Fun fact! I am in ❤️ with tech for
-        <span id="time-container">0</span> seconds.
-      </p>
       <span class="copyright">© 2021 Philipp Wagner, All Rights Reserved.</span>
       <span class="location">Designed in Frankfurt, Germany.</span>
     </footer>
