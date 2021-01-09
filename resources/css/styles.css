@@ -56,6 +56,8 @@ header {
 
 header ul {
   display: flex;
+  justify-content: space-around;
+  padding: 0;
 }
 
 header li {
@@ -220,7 +222,8 @@ i{
   color: white;
   margin-top: 15rem;
   padding-left: 2%;
-  line-height: 1rem;
+  padding-bottom: 0.5em;
+  line-height: 0.75rem;
 }
 .hero-subtitle {
   font-size: 1rem;
@@ -518,14 +521,29 @@ img.profile-photo {
     padding: 5px 20px;
   }
 
+  h1 {
+  font-size: 2.5rem;
+  }
+
+   h2 {
+  font-size: 2rem;
+  text-align: center;
+  }
+
+
   .brand-name{
     margin-top: 20px;
     padding-left: 0;
+    padding-right: 0;
   }
 
      .education {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr repeat(8, 3fr);
+}
+
+.hero-title {
+  font-size: 1.75rem;
 }
 
 .education-items {
